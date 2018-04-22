@@ -1,0 +1,18 @@
+{
+  "editor.fontSize": 18,
+  "editor.fontFamily": "Operator Mono",
+  "editor.links": false,
+  "editor.lineHeight": 24,
+  "editor.cursorStyle": "underline",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "boundary",
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "window.zoomLevel": -1,
+  "workbench.editor.showTabs": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.iconTheme": "file-icons",
+  "workbench.colorTheme": "One Dark Space Gray"
+}
