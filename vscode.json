@@ -21,6 +21,7 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
+  "terminal.integrated.fontFamily": "Iosevka",
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.fontWeight": "500",
