@@ -1,13 +1,31 @@
+[user]
+    email = dragisaspasojevic@gmail.com
+    name = Dragiša Spasojević
+
+[color]
+    ui = true
+
+[color "diff"]
+    meta = yellow bold ul
+    frag = cyan bold ul
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red bold
+
 [alias]
-	s = status
-	l = log
-	d = diff
-	ds = diff --staged
-	a = add
-	p = add --patch
-	c = commit -m
-	co = checkout
-	b = checkout -b
-	u = reset head^ --soft
-	r = reset head
-	fpush = push --force
+    s = status
+    l = log
+    d = diff
+    ds = diff --staged
+    a = add
+    p = add --patch
+    c = commit -m
+    co = checkout
+    b = checkout -b
+    u = reset head^ --soft
+    r = reset head
+    fpush = push --force
