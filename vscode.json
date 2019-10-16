@@ -1,40 +1,53 @@
 {
+  "breadcrumbs.enabled": false,
+
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
-
-  "editor.fontFamily": "Iosevka",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fantasque Sans Mono",
   "editor.fontSize": 16,
-  "editor.fontWeight": "500",
-
-  "editor.formatOnSave": false,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
-
   "editor.links": false,
-  "editor.wordWrap": "on",
   "editor.rulers": [80, 100, 120],
   "editor.renderWhitespace": "boundary",
-  "editor.minimap.enabled": false,
   "editor.matchBrackets": false,
+  "editor.minimap.enabled": false,
+  "editor.renderFinalNewline": true,
+  "editor.renderLineHighlight": "all",
+
+  "explorer.openEditors.visible": 0,
 
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-
-  "terminal.integrated.fontFamily": "Iosevka",
-  "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontWeight": "500",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.vscode": true,
+    "**/.gradle": true,
+    "**/.expo": true
+  },
 
   "search.location": "panel",
 
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.rendererType": "dom",
+
+  "window.zoomLevel": 0,
+
   "workbench.settings.editor": "json",
+  "workbench.tree.indent": 10,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": true,
 
   "zenMode.hideTabs": false,
-  "zenMode.hideLineNumbers": false,
-
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-
-  "formattingToggle.activateFor": ["formatOnSave"]
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false
 }
