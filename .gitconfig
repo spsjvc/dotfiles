@@ -29,3 +29,6 @@
     u = reset head^ --soft
     r = reset head
     fpush = push --force
+    sts = stash save --include-untracked
+    stl = stash list
+    stp = stash pop
