@@ -26,8 +26,8 @@
     c = commit -m
     co = checkout
     b = checkout -b
-    u = reset head^ --soft
-    r = reset head
+    u = reset --soft HEAD^
+    r = reset HEAD
     fpush = push --force
     sts = stash save --include-untracked
     stl = stash list
