@@ -1,12 +1,10 @@
 {
-  "breadcrumbs.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
 
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 16,
   "editor.fontLigatures": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.links": false,
@@ -14,6 +12,8 @@
   "editor.renderWhitespace": "boundary",
   "editor.matchBrackets": false,
   "editor.minimap.enabled": false,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 14,
   "editor.renderFinalNewline": true,
   "editor.renderLineHighlight": "all",
 
@@ -35,19 +35,17 @@
 
   "search.location": "panel",
 
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.rendererType": "dom",
 
   "window.zoomLevel": 0,
 
-  "workbench.settings.editor": "json",
   "workbench.tree.indent": 10,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
-
-  "zenMode.hideTabs": false,
-  "zenMode.fullScreen": false,
-  "zenMode.hideLineNumbers": false
+  "workbench.fontAliasing": "antialiased",
+  "workbench.settings.editor": "json",
+  "workbench.iconTheme": null
 }
