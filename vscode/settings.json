@@ -1,24 +1,21 @@
 {
   "diffEditor.ignoreTrimWhitespace": false,
-
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
   "editor.fontLigatures": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.formatOnPaste": false,
   "editor.formatOnType": false,
   "editor.links": false,
   "editor.rulers": [80, 100, 120],
   "editor.renderWhitespace": "boundary",
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "always",
   "editor.minimap.enabled": false,
   "editor.fontFamily": "JetBrains Mono",
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.renderFinalNewline": true,
   "editor.renderLineHighlight": "all",
-
   "explorer.openEditors.visible": 0,
-
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
@@ -32,20 +29,18 @@
     "**/.gradle": true,
     "**/.expo": true
   },
-
   "search.location": "panel",
-
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.rendererType": "dom",
-
   "window.zoomLevel": 0,
-
   "workbench.tree.indent": 10,
   "workbench.tree.renderIndentGuides": "always",
   "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
   "workbench.fontAliasing": "antialiased",
   "workbench.settings.editor": "json",
-  "workbench.iconTheme": null
+  "workbench.iconTheme": null,
+  // Extensions
+  "formattingToggle.affects": ["formatOnSave"]
 }
