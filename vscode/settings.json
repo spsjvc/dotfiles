@@ -11,8 +11,8 @@
   "editor.renderWhitespace": "boundary",
   "editor.matchBrackets": "always",
   "editor.minimap.enabled": false,
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontSize": 13,
+  "editor.fontFamily": "Hack",
+  "editor.fontSize": 14,
   "editor.renderFinalNewline": true,
   "editor.renderLineHighlight": "all",
   "explorer.openEditors.visible": 0,
@@ -29,8 +29,7 @@
     "**/.gradle": true,
     "**/.expo": true
   },
-  "search.location": "panel",
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.rendererType": "dom",
   "window.zoomLevel": 0,
@@ -40,7 +39,12 @@
   "workbench.statusBar.visible": true,
   "workbench.fontAliasing": "antialiased",
   "workbench.settings.editor": "json",
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "file-icons-colourless",
+  "workbench.colorTheme": "Github Light Theme",
   // Extensions
-  "formattingToggle.affects": ["formatOnSave"]
+  "formattingToggle.affects": ["formatOnSave"],
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.quoteProps": "consistent",
+  "prettier.semi": false
 }
