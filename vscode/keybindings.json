@@ -4,6 +4,10 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
+    "key": "shift+cmd+j",
+    "command": "workbench.action.gotoLine"
+  },
+  {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal"
   },
