@@ -17,18 +17,16 @@
     untracked = red bold
 
 [alias]
-    s = status
-    l = log
-    d = diff
-    ds = diff --staged
     a = add
-    p = add --patch
+    b = checkout -b
     c = commit -m
     co = checkout
-    b = checkout -b
-    u = reset --soft HEAD^
-    r = reset HEAD
+    d = diff
+    ds = diff --staged
+    f = fetch
     fpush = push --force
-    sts = stash save --include-untracked
-    stl = stash list
-    stp = stash pop
+    l = log
+    p = add --patch
+    r = reset HEAD
+    s = status
+    u = reset --soft HEAD^
