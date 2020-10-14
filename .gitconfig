@@ -3,7 +3,7 @@
     name = Dragiša Spasojević
 
 [core]
-    editor = vim
+    editor = vi
 
 [color]
     ui = true
