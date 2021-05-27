@@ -28,7 +28,7 @@
     ds = diff --staged
     f = fetch
     fpush = push --force
-    l = log
+    l = log --graph --pretty=oneline --abbrev-commit
     p = add --patch
     r = reset HEAD
     s = status
