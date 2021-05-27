@@ -1,2 +1,5 @@
 # dotfiles
-The place where settings live.
+
+```
+sudo chmod +x setup.sh && ./setup.sh
+```
