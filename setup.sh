@@ -11,6 +11,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     cp ./vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
 fi
 
+code --install-extension irongeek.vscode-env
 code --install-extension file-icons.file-icons
 code --install-extension esbenp.prettier-vscode
 code --install-extension tombonnike.vscode-status-bar-format-toggle
