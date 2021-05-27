@@ -11,8 +11,6 @@
   "editor.renderWhitespace": "boundary",
   "editor.matchBrackets": "always",
   "editor.minimap.enabled": false,
-  "editor.fontFamily": "SF Mono Powerline",
-  "editor.fontSize": 13,
   "editor.renderFinalNewline": true,
   "editor.renderLineHighlight": "all",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -31,7 +29,6 @@
     "**/.gradle": true,
     "**/.expo": true
   },
-  "terminal.integrated.fontSize": 13,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.rendererType": "dom",
   "workbench.tree.indent": 10,
@@ -40,8 +37,6 @@
   "workbench.statusBar.visible": true,
   "workbench.fontAliasing": "default",
   "workbench.settings.editor": "json",
-  "workbench.iconTheme": "file-icons-colourless",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
   "zenMode.fullScreen": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
@@ -50,5 +45,9 @@
   "formattingToggle.affects": ["formatOnSave"],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
-  "prettier.quoteProps": "consistent"
+  "prettier.quoteProps": "consistent",
+
+  // Languages
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true
 }
