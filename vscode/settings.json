@@ -13,7 +13,6 @@
   "editor.minimap.enabled": false,
   "editor.renderFinalNewline": true,
   "editor.renderLineHighlight": "all",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.wordWrap": "on",
   "explorer.openEditors.visible": 0,
   "files.insertFinalNewline": true,
@@ -41,11 +40,15 @@
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
 
+  // Themes
+  "workbench.iconTheme": "file-icons-colourless",
+
   // Extensions
   "formattingToggle.affects": ["formatOnSave"],
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "prettier.quoteProps": "consistent",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Languages
   "python.linting.enabled": true,
