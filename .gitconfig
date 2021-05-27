@@ -33,3 +33,6 @@
     r = reset HEAD
     s = status
     u = reset --soft HEAD^
+
+[pull]
+    rebase = false
