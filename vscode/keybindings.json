@@ -8,16 +8,8 @@
     "command": "workbench.action.gotoLine"
   },
   {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
-  },
-  {
     "key": "shift+cmd+g",
     "command": "workbench.view.scm"
-  },
-  {
-    "key": "ctrl+shift+g",
-    "command": "-workbench.view.scm"
   },
   {
     "key": "cmd+1",
