@@ -1,56 +1,46 @@
 {
-  "diffEditor.ignoreTrimWhitespace": false,
+  // editor.*
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": false,
-  "editor.formatOnType": false,
-  "editor.links": false,
-  "editor.rulers": [80, 100, 120],
-  "editor.renderWhitespace": "boundary",
-  "editor.matchBrackets": "always",
   "editor.minimap.enabled": false,
   "editor.renderFinalNewline": true,
-  "editor.renderLineHighlight": "all",
+  "editor.renderLineHighlight": "line",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 100, 120],
   "editor.wordWrap": "on",
+
+  // explorer.*
   "explorer.openEditors.visible": 0,
+
+  // files.*
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true,
-    "**/.vscode": true,
-    "**/.gradle": true,
-    "**/.expo": true
-  },
-  "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.rendererType": "dom",
-  "workbench.tree.indent": 10,
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.activityBar.visible": false,
-  "workbench.statusBar.visible": true,
-  "workbench.fontAliasing": "default",
-  "workbench.settings.editor": "json",
-  "zenMode.fullScreen": true,
-  "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
 
-  // Themes
-  "workbench.iconTheme": "file-icons-colourless",
-
-  // Extensions
+  // formattingToggle.*
   "formattingToggle.affects": ["formatOnSave"],
+
+  // prettier.*
+  "prettier.quoteProps": "consistent",
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
-  "prettier.quoteProps": "consistent",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // Languages
-  "python.linting.enabled": true,
-  "python.linting.flake8Enabled": true
+  // terminal.*
+  "terminal.integrated.fontFamily": "SF Mono Powerline",
+  "terminal.integrated.fontWeightBold": "normal",
+
+  // workbench.*
+  "workbench.activityBar.visible": false,
+  "workbench.iconTheme": "file-icons-colourless",
+  "workbench.panel.opensMaximized": "always",
+  "workbench.settings.editor": "json",
+  "workbench.tree.renderIndentGuides": "always",
+
+  // zenMode.*
+  "zenMode.fullScreen": true,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false
 }
