@@ -37,6 +37,7 @@
   "workbench.iconTheme": "file-icons-colourless",
   "workbench.panel.opensMaximized": "always",
   "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
   "workbench.tree.renderIndentGuides": "always",
 
   // zenMode.*
