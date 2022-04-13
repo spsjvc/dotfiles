@@ -1,4 +1,7 @@
 {
+  // diffEditor.*
+  "diffEditor.renderSideBySide": false,
+
   // editor.*
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
