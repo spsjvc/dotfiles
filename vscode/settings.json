@@ -24,7 +24,7 @@
   "files.trimTrailingWhitespace": true,
 
   // formattingToggle.*
-  "formattingToggle.affects": ["formatOnSave"],
+  "formattingToggle.affects": ["editor.formatOnSave"],
 
   // prettier.*
   "prettier.quoteProps": "consistent",
