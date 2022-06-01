@@ -12,6 +12,10 @@
     "command": "workbench.view.scm"
   },
   {
+    "key": "shift+cmd+r",
+    "command": "workbench.action.splitEditorRight"
+  },
+  {
     "key": "cmd+1",
     "command": "workbench.action.openEditorAtIndex1"
   },
