@@ -30,9 +30,5 @@
   {
     "key": "cmd+4",
     "command": "workbench.action.openEditorAtIndex4"
-  },
-  {
-    "key": "cmd+5",
-    "command": "workbench.action.openEditorAtIndex5"
   }
 ]
