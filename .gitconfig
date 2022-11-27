@@ -22,7 +22,7 @@
 [alias]
     a = add
     b = checkout -b
-    c = commit -m
+    c = commit -S -m
     co = checkout
     d = diff
     ds = diff --staged
@@ -34,5 +34,5 @@
     s = status
     u = reset --soft HEAD^
 
-[pull]
-    rebase = false
+[commit]
+    gpgsign = true
