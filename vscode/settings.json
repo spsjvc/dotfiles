@@ -1,12 +1,13 @@
 {
   // diffEditor.*
   "diffEditor.renderSideBySide": false,
+  "diffEditor.ignoreTrimWhitespace": false,
 
   // editor.*
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Cascadia Code",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
@@ -26,18 +27,22 @@
   // formattingToggle.*
   "formattingToggle.affects": ["editor.formatOnSave"],
 
+  // git.*
+  "git.mergeEditor": false,
+
   // prettier.*
   "prettier.quoteProps": "consistent",
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
 
   // terminal.*
-  "terminal.integrated.fontFamily": "SF Mono Powerline",
+  "terminal.integrated.fontFamily": "Cascadia Code PL",
   "terminal.integrated.fontWeightBold": "normal",
 
   // workbench.*
   "workbench.activityBar.visible": false,
-  "workbench.iconTheme": "file-icons-colourless",
+  "workbench.fontAliasing": "auto",
+  "workbench.iconTheme": "eq-material-theme-icons-light",
   "workbench.panel.opensMaximized": "always",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
