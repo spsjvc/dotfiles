@@ -1,5 +1,5 @@
-" Show line numbers
-set number
+" Show hybrid line numbers (relative line numbers, except the current line which is absolute)
+set number relativenumber
 
 " Use spaces instead of tabs
 set expandtab
