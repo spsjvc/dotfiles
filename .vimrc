@@ -4,6 +4,10 @@ set number relativenumber
 " Use spaces instead of tabs
 set expandtab
 
+" Show leading spaces
+set list
+set listchars=lead:·
+
 " Change tab size to 4
 set tabstop=4
 
