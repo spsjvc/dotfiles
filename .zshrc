@@ -102,6 +102,8 @@ source $ZSH/oh-my-zsh.sh
 #
 # create parent directories if necessary with verbose output
 alias mkdir="mkdir -pv"
+# list all files, directories first, indicated with /
+alias ls="ls -la --color --group-directories-first --indicator-style=slash"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
