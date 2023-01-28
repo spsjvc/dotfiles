@@ -6,6 +6,7 @@ DOTFILES_PATH=$(pwd)
 ln -s $DOTFILES_PATH/.Xmodmap $HOME/.Xmodmap
 ln -s $DOTFILES_PATH/.xinitrc $HOME/.xinitrc
 ln -s $DOTFILES_PATH/.vimrc $HOME/.vimrc
+ln -s $DOTFILES_PATH/.zshrc $HOME/.zshrc
 ln -s $DOTFILES_PATH/.gitconfig $HOME/.gitconfig
 
 mkdir -pv $HOME/.config/alacritty
