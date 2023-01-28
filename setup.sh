@@ -1,23 +1,23 @@
 #!/bin/bash
 
-cp .gitconfig ~/.gitconfig
-cp .vimrc ~/.vimrc
+# Store path to the dotfiles folder
+DOTFILES_PATH=$(pwd)
 
-if [ "$(uname)" == "Darwin" ]; then
-    cp ./vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-    cp ./vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
-elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    cp ./vscode/settings.json $HOME/.config/Code/User/settings.json
-    cp ./vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
-fi
+ln -s $DOTFILES_PATH/.Xmodmap $HOME/.Xmodmap
+ln -s $DOTFILES_PATH/.xinitrc $HOME/.xinitrc
+ln -s $DOTFILES_PATH/.vimrc $HOME/.vimrc
+ln -s $DOTFILES_PATH/.gitconfig $HOME/.gitconfig
 
-# Visual Studio Code Extensions
-code --install-extension irongeek.vscode-env
-code --install-extension file-icons.file-icons
-code --install-extension esbenp.prettier-vscode
-code --install-extension tombonnike.vscode-status-bar-format-toggle
-code --install-extension ms-python.python
+mkdir -pv $HOME/.config/alacritty
+ln -s $DOTFILES_PATH/.config/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
 
-# Zsh Plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-source ~/.zshrc
+mkdir -pv $HOME/.config/i3
+ln -s $DOTFILES_PATH/.config/i3/config $HOME/.config/i3/config
+
+mkdir -pv $HOME/.config/i3status
+ln -s $DOTFILES_PATH/.config/i3status/config $HOME/.config/i3status/config
+
+# Install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
