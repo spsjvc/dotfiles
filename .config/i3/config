@@ -196,10 +196,14 @@ bindsym $mod+r mode "resize"
 # finds out, if available
 bar {
         position top
-        tray_output none
+        tray_output primary
         status_command ~/.i3/bumblebee-status/bumblebee-status \
-                -m pomodoro cpu memory nic weather datetime battery \
-                -p pomodoro.work=50 pomodoro.break=10 datetime.format="%a %d/%m/%Y %H:%M:%S"
+                -m pomodoro cpu memory pulseout battery nic weather datetime \
+                -p pomodoro.work=50 pomodoro.break=10 \
+                -p nic.states=up nic.format="{ssid}" \
+                -p pulseout.limit=100 \
+                -p datetime.format="%a %d/%m/%Y %H:%M:%S" \
+                -t moonlight-powerline
 }
 
 # Make border for all windows 2px and remove the title bar
