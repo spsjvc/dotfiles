@@ -43,6 +43,9 @@ exec --no-startup-id redshift
 # Start picom compositor
 exec --no-startup-id picom -b
 
+# Start 1Password
+exec --no-startup-id 1password --silent
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
