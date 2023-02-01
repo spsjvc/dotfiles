@@ -221,14 +221,9 @@ bar {
                 -t moonlight-powerline
 }
 
-# Make border for all windows 2px and remove the title bar
-for_window [all] border pixel 2
+# Remove border and title bar for all windows
+for_window [all] border pixel 0
 
 # Set gaps
-gaps inner 8
-gaps outer 8
-
-# Colors (https://i3wm.org/docs/userguide.html#_changing_colors)
-#
-# class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #b8bb26
+gaps inner 16
+gaps outer  0
