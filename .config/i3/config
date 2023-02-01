@@ -46,6 +46,15 @@ exec --no-startup-id picom -b
 # Start 1Password
 exec --no-startup-id 1password --silent
 
+# Open 1Password as floating
+for_window [class="1Password"] floating enable
+
+# Open pavucontrol as floating
+for_window [class="Pavucontrol"] floating enable
+
+# Open Telegram as floating
+for_window [class="Telegram"] floating enable
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
