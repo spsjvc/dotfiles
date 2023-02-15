@@ -107,8 +107,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Create parent directories if necessary, with verbose output
 alias mkdir="mkdir -pv"
-# List all files, directories first, indicated with /
-alias ls="ls -la --color --group-directories-first --indicator-style=slash"
+# List all files in a long listing format
+alias ls="ls -l --almost-all --color --group-directories-first --human-readable --indicator-style=slash"
 # Go to dotfiles
 alias dot="cd $DOTFILES_PATH"
 alias dotfiles="cd $DOTFILES_PATH"
