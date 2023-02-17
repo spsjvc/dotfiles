@@ -212,14 +212,37 @@ bindsym $mod+r mode "resize"
 bar {
         position top
         tray_output primary
+        tray_padding 3
+
         status_command ~/.i3/bumblebee-status/bumblebee-status \
-                -m pomodoro cpu memory pulseout battery nic weather datetime \
+                -m pomodoro pulseout battery nic weather datetime system \
                 -p pomodoro.work=50 pomodoro.break=10 \
-                -p nic.states=up nic.format="{ssid}" \
+                -p nic.states=up \
                 -p pulseout.limit=100 \
                 -p datetime.format="%a %d/%m/%Y %H:%M:%S" \
-                -t moonlight-powerline
+                -t gruvbox
+
+        colors {
+            background #1d2021
+        }
 }
+
+bar {
+        position bottom
+        tray_output none
+        workspace_buttons no
+
+        status_command ~/.i3/bumblebee-status/bumblebee-status \
+                -m playerctl getcrypto disk cpu memory \
+                -p playerctl.layout="playerctl.song" \
+                -p getcrypto.interval=300 getcrypto.getbtc=0 getcrypto.getltc=0 \
+                -t gruvbox
+
+        colors {
+            background #1d2021
+        }
+}
+
 
 # Remove border and title bar for all windows
 for_window [all] border pixel 0
