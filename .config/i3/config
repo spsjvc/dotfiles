@@ -215,11 +215,13 @@ bar {
         tray_padding 3
 
         status_command ~/.i3/bumblebee-status/bumblebee-status \
-                -m pomodoro pulseout battery nic weather datetime system \
-                -p pomodoro.work=50 pomodoro.break=10 \
-                -p nic.states=up \
-                -p pulseout.limit=100 \
-                -p datetime.format="%a %d/%m/%Y %H:%M:%S" \
+                -m pomodoro -p pomodoro.work=50 pomodoro.break=10 \
+                -m pulseout -p pulseout.limit=100 \
+                -m battery \
+                -m nic -p nic.states=up \
+                -m weather \
+                -m datetime -p datetime.format="%a %d/%m/%Y %H:%M:%S" \
+                -m system \
                 -t gruvbox
 
         colors {
@@ -233,9 +235,11 @@ bar {
         workspace_buttons no
 
         status_command ~/.i3/bumblebee-status/bumblebee-status \
-                -m playerctl getcrypto disk cpu memory \
-                -p playerctl.layout="playerctl.song" \
-                -p getcrypto.interval=300 getcrypto.getbtc=0 getcrypto.getltc=0 \
+                -m playerctl -p playerctl.layout="playerctl.song" \
+                -m getcrypto -p getcrypto.interval=300 getcrypto.getbtc=0 getcrypto.getltc=0 \
+                -m disk \
+                -m cpu \
+                -m memory \
                 -t gruvbox
 
         colors {
