@@ -248,5 +248,5 @@ bar {
 for_window [all] border pixel 0
 
 # Set gaps
-gaps inner 16
-gaps outer  0
+gaps inner 8
+gaps outer 0
