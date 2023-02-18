@@ -9,6 +9,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Gruvbox theme
+Plug 'morhetz/gruvbox'
+
 call plug#end()
 
 nnoremap <C-p> :GFiles<Cr>
@@ -37,3 +40,10 @@ set cursorline
 
 " Show leading spaces and eol
 set list listchars=lead:·,eol:↲
+
+" Customize gruvbox
+set background=dark
+let g:gruvbox_contrast_dark = 'hard'
+
+" Enable gruvbox
+autocmd vimenter * ++nested colorscheme gruvbox
