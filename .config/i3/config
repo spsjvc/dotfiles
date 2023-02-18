@@ -38,7 +38,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id ~/.fehbg &
 
 # Start redshift for automatic screen color temperature adjustment
-exec --no-startup-id redshift
+exec --no-startup-id redshift-gtk
 
 # Start picom compositor
 exec --no-startup-id picom -b
