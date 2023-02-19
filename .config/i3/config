@@ -222,7 +222,7 @@ bar {
                 -m pulseout -p pulseout.limit=100 \
                 -m battery \
                 -m nic -p nic.states=up \
-                -m weather \
+                -m weather -p weather.showcity=false \
                 -m datetime -p datetime.format="%a %d/%m/%Y %H:%M:%S" \
                 -m system \
                 -t gruvbox
