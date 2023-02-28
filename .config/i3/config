@@ -70,7 +70,9 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
+# start a floating terminal
+bindsym $mod+Shift+Return exec --no-startup-id alacritty --class floating
 
 # kill focused window
 bindsym $mod+w kill
@@ -250,6 +252,9 @@ bar {
 
 # Remove border and title bar for all windows
 for_window [all] border pixel 0
+
+# Make all windows with the clas "floating" float
+for_window [class="^floating$"] floating enable
 
 # Set gaps
 gaps inner 8
