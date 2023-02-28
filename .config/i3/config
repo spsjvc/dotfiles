@@ -224,7 +224,6 @@ bar {
                 -m nic -p nic.states=up \
                 -m weather -p weather.showcity=false \
                 -m datetime -p datetime.format="%a %d/%m/%Y %H:%M:%S" \
-                -m system \
                 -t gruvbox
 
         colors {
@@ -239,7 +238,6 @@ bar {
 
         status_command ~/.i3/bumblebee-status/bumblebee-status \
                 -m playerctl -p playerctl.layout="playerctl.song" \
-                -m getcrypto -p getcrypto.interval=300 getcrypto.getbtc=0 getcrypto.getltc=0 \
                 -m disk \
                 -m cpu \
                 -m memory \
@@ -249,7 +247,6 @@ bar {
             background #1d2021
         }
 }
-
 
 # Remove border and title bar for all windows
 for_window [all] border pixel 0
