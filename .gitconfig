@@ -22,7 +22,7 @@
 [alias]
     a = add
     b = checkout -b
-    c = commit -S -m
+    c = commit --allow-empty --gpg-sign -m
     co = checkout
     d = diff
     ds = diff --staged
