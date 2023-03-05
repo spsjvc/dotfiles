@@ -78,7 +78,7 @@ bindsym $mod+Shift+Return exec --no-startup-id alacritty --class floating
 bindsym $mod+w kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec --no-startup-id rofi -combi-modes window#drun#run -show combi
+bindsym $mod+space exec --no-startup-id rofi -combi-modes drun#window#run -show combi
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
