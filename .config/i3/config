@@ -252,12 +252,5 @@ bar {
         }
 }
 
-# Remove border and title bar for all windows
-for_window [all] border pixel 0
-
-# Make all windows with the clas "floating" float
+# Make all windows with the class "floating" float
 for_window [class="^floating$"] floating enable
-
-# Set gaps
-gaps inner 8
-gaps outer 0
