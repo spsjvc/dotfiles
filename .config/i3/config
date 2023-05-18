@@ -218,7 +218,7 @@ bar {
         output primary
         position top
         tray_output primary
-        tray_padding 3
+        tray_padding 4
 
         status_command ~/.i3/bumblebee-status/bumblebee-status \
                 -m pomodoro -p pomodoro.work=50 pomodoro.break=10 \
