@@ -149,3 +149,5 @@ configuration {
       sorting-method:    "name";
   }
 }
+
+@theme "gruvbox-dark"
