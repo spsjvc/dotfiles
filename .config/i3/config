@@ -244,10 +244,10 @@ bar {
         workspace_buttons no
 
         status_command ~/.i3/bumblebee-status/bumblebee-status \
-                -m playerctl -p playerctl.layout="playerctl.song" \
-                -m disk \
+                -m coingecko \
                 -m cpu \
                 -m memory \
+                -m disk \
                 -t gruvbox
 
         colors {
