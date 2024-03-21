@@ -73,9 +73,9 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id kitty
 # start a floating terminal
-bindsym $mod+Shift+Return exec --no-startup-id alacritty --class floating
+bindsym $mod+Shift+Return exec --no-startup-id kitty --class floating-terminal
 
 # kill focused window
 bindsym $mod+w kill
@@ -255,5 +255,9 @@ bar {
         }
 }
 
-# Make all windows with the class "floating" float
-for_window [class="^floating$"] floating enable
+# Set windows to floating by default
+for_window [class=".*"] floating enable
+
+# Set position and dimensions for the floating terminal
+for_window [class="floating-terminal"] resize set 1280 720
+for_window [class="floating-terminal"] move position center
