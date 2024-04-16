@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -81,7 +81,7 @@ bindsym $mod+Shift+Return exec --no-startup-id kitty --class floating-terminal
 bindsym $mod+w kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec --no-startup-id rofi -combi-modes drun#window#run -show combi
+bindsym $mod+space exec --no-startup-id rofi -combi-modes drun#window#run -show combi -show-icons
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -225,7 +225,7 @@ bar {
 
         status_command ~/.i3/bumblebee-status/bumblebee-status \
                 -m pomodoro -p pomodoro.work=50 pomodoro.break=10 \
-                -m pulseout -p pulseout.limit=100 \
+                -m pipewire \
                 -m battery \
                 -m nic -p nic.states=up \
                 -m weather -p weather.showcity=false \
@@ -255,9 +255,12 @@ bar {
         }
 }
 
-# Set windows to floating by default
-for_window [class=".*"] floating enable
-
-# Set position and dimensions for the floating terminal
+# Preferences for the floating terminal
+for_window [class="floating-terminal"] floating enable
 for_window [class="floating-terminal"] resize set 1280 720
 for_window [class="floating-terminal"] move position center
+
+# Preferences specific to the 3840x1600 ultrawide monitor
+#
+# Set windows to floating by default and with specific dimensions
+# for_window [class=".*"] floating enable resize set 1920 1200
