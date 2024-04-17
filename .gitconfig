@@ -3,7 +3,7 @@
     name = spsjvc
 
 [core]
-    editor = vi
+    editor = vim
 
 [color]
     ui = true
