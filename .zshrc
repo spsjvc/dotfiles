@@ -4,11 +4,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Path to repositories from GitHub
-export GITHUB_PATH="$HOME/Code/GitHub"
-# Path to dotfiles
-export DOTFILES_PATH="$GITHUB_PATH/spsjvc/dotfiles"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -112,9 +107,6 @@ source $ZSH/oh-my-zsh.sh
 alias mkdir="mkdir -pv"
 # List all files in a long listing format
 alias ls="ls -l --almost-all --color --group-directories-first --human-readable --indicator-style=slash"
-# Go to dotfiles
-alias dot="cd $DOTFILES_PATH"
-alias dotfiles="cd $DOTFILES_PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
