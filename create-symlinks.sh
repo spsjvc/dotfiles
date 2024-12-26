@@ -1,6 +1,8 @@
 #!/bin/bash
 
 declare -a dotfiles=(
+	".config/kitty/kitty.conf"
+	".config/kitty/current-theme.conf"
 	".gitconfig"
 	".zshrc"
 )
