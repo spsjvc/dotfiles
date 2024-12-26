@@ -75,6 +75,9 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+# Change foreground color for zsh-autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
