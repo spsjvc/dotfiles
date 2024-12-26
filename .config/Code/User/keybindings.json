@@ -1,14 +1,34 @@
 [
+  // Linux
   {
     "key": "ctrl+shift+g",
-    "command": "workbench.view.scm"
+    "command": "workbench.view.scm",
+    "when": "isLinux"
   },
   {
     "key": "ctrl+shift+j",
-    "command": "workbench.action.gotoLine"
+    "command": "workbench.action.gotoLine",
+    "when": "isLinux"
   },
   {
     "key": "ctrl+shift+r",
-    "command": "workbench.action.splitEditorRight"
+    "command": "workbench.action.splitEditorRight",
+    "when": "isLinux"
+  },
+  // Mac
+  {
+    "key": "cmd+shift+g",
+    "command": "workbench.view.scm",
+    "when": "isMac"
+  },
+  {
+    "key": "cmd+shift+j",
+    "command": "workbench.action.gotoLine",
+    "when": "isMac"
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "workbench.action.splitEditorRight",
+    "when": "isMac"
   }
 ]
