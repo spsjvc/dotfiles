@@ -17,11 +17,13 @@ do
 	src="$(pwd)/$dotfile"
 	link="$HOME/$dotfile"
 
+	echo "$link -> $src"
+
 	if [ -L $link ] ; then
-		echo "$link -> $src symlink already exists"
+		echo "  symlink already exists"
 	else
 		ln -s $src $link
-		echo "$link -> $src symlink created"
+		echo "  symlink created"
 	fi
 done
 
