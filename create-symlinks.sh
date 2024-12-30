@@ -9,6 +9,7 @@ declare -a dotfiles=(
 	".config/kitty/current-theme.conf"
 	# Other
 	".gitconfig"
+	".vimrc"
 	".zshrc"
 )
 
@@ -26,5 +27,3 @@ do
 		echo "  symlink created"
 	fi
 done
-
-
