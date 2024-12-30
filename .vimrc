@@ -5,13 +5,6 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Custom statusline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" Gruvbox theme
-Plug 'morhetz/gruvbox'
-
 call plug#end()
 
 nnoremap <C-p> :GFiles<Cr>
@@ -32,18 +25,8 @@ set tabstop=4
 " Change encoding to UTF-8
 set encoding=utf-8
 
-" Don't show mode in status bar
-set noshowmode
-
 " Highlight the current line and column
-set cursorline cursorcolumn
+set cursorline
 
-" Show leading spaces and eol
-set list listchars=lead:·,eol:↲
-
-" Customize gruvbox
-set background=dark
-let g:gruvbox_contrast_dark = 'hard'
-
-" Enable gruvbox
-autocmd vimenter * ++nested colorscheme gruvbox
+" Show tabs, spaces and eol
+set list listchars=tab:➞\ \,multispace:·,trail:·,eol:$
