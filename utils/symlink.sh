@@ -9,7 +9,10 @@ symlink() {
 	if [ -L $link ] ; then
 		echo "  symlink already exists"
 	else
-		ln -s $target $link
+		# Create the parent directory in case it doesn't exist
+		mkdir -p $(dirname "$link") && \
+		# Create the symbolic link
+		ln -s $target $link && \
 		echo "  symlink created"
 	fi
 }
