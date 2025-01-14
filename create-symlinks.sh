@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./utils/symlink.sh
+
 declare -a dotfiles=(
 	# Visual Studio Code
 	".config/Code/User/settings.json"
@@ -15,15 +17,6 @@ declare -a dotfiles=(
 
 for dotfile in "${dotfiles[@]}"
 do
-	src="$(pwd)/$dotfile"
-	link="$HOME/$dotfile"
-
-	echo "$link -> $src"
-
-	if [ -L $link ] ; then
-		echo "  symlink already exists"
-	else
-		ln -s $src $link
-		echo "  symlink created"
-	fi
+	# Create a symlink targeting the dotfiles directory in the home directory
+	symlink "$(pwd)/$dotfile" "$HOME/$dotfile"
 done
