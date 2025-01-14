@@ -223,7 +223,7 @@ bar {
         tray_output primary
         tray_padding 4
 
-        status_command ~/.i3/bumblebee-status/bumblebee-status \
+        status_command ~/Code/spsjvc/bumblebee-status/bumblebee-status \
                 -m pomodoro -p pomodoro.work=50 pomodoro.break=10 \
                 -m pipewire \
                 -m battery \
@@ -243,7 +243,7 @@ bar {
         tray_output none
         workspace_buttons no
 
-        status_command ~/.i3/bumblebee-status/bumblebee-status \
+        status_command ~/Code/spsjvc/bumblebee-status/bumblebee-status \
                 -m coingecko \
                 -m cpu \
                 -m memory \
