@@ -4,9 +4,21 @@
 
 [core]
     editor = vim
+    pager = delta
 
 [color]
     ui = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[merge]
+    conflictstyle = zdiff3
+
+[delta]
+    navigate = true
+    hyperlinks = true
+    line-numbers = true
 
 [color "diff"]
     meta = yellow bold ul
