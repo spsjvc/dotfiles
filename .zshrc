@@ -110,6 +110,8 @@ source $ZSH/oh-my-zsh.sh
 alias mkdir="mkdir -pv"
 # List all files in a long listing format
 alias ls="ls -l --almost-all --color --group-directories-first --human-readable --indicator-style=slash"
+# https://wiki.archlinux.org/title/Kitty#Terminal_issues_with_SSH
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
