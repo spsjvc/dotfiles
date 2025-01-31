@@ -3,6 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+# Path to dotfiles
+export DOTFILES="$HOME/Code/spsjvc/dotfiles"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -112,6 +114,8 @@ alias mkdir="mkdir -pv"
 alias ls="ls -l --almost-all --color --group-directories-first --human-readable --indicator-style=slash"
 # https://wiki.archlinux.org/title/Kitty#Terminal_issues_with_SSH
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+# Include custom utils
+source $DOTFILES/utils/wallpaper.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
