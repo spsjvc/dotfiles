@@ -117,9 +117,8 @@ alias ls="ls -l --almost-all --color --group-directories-first --human-readable 
 # Include custom utils
 source $DOTFILES/utils/wallpaper.sh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# This loads fnm (https://github.com/Schniz/fnm)
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # This enables passphrase prompt for gpg, which is used when signing a commit
 export GPG_TTY=$(tty)
