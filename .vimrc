@@ -28,5 +28,5 @@ set encoding=utf-8
 " Highlight the current line and column
 set cursorline
 
-" Show tabs, spaces and eol
-set list listchars=tab:➞\ \,multispace:·,trail:·,eol:$
+" Show tabs, multispaces and trailing spaces
+set list listchars=tab:➞\ \,multispace:·,trail:·
