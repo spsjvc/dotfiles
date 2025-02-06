@@ -49,6 +49,9 @@ exec --no-startup-id picom -b
 # Start 1Password
 exec --no-startup-id 1password --silent
 
+# Set up touchpad
+exec --no-startup-id ~/Code/spsjvc/dotfiles/setup-touchpad.sh
+
 # Open 1Password as floating
 for_window [class="1Password"] floating enable
 
