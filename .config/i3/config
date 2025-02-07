@@ -72,14 +72,12 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5% && $refresh_i3status
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%- && $refresh_i3status
 
-# Define screenshots folder
-set $scr_folder ~/Pictures/Screenshots
-# Define screenshots file pattern
-set $scr_file %Y-%m-%d-at-%H-%M-%S.png
+# Define screenshot file path and name
+set $scr_file ~/Pictures/Screenshots/%Y-%m-%d-at-%H-%M-%S.png
 
 # Use scrot to take screenshots
-bindsym $mod+p exec --no-startup-id scrot --select --file $scr_folder/$scr_file
-bindsym $mod+Shift+p exec --no-startup-id scrot --file $scr_folder/$scr_file
+bindsym $mod+p       exec --no-startup-id scrot --select $scr_file --exec "xclip -selection clipboard -t image/png -i \$f"
+bindsym $mod+Shift+p exec --no-startup-id scrot          $scr_file --exec "xclip -selection clipboard -t image/png -i \$f"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
