@@ -35,8 +35,7 @@
   "prettier.trailingComma": "es5",
 
   // terminal.*
-  "terminal.integrated.fontFamily": "Cascadia Code PL",
-  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontFamily": "Iosevka Term Slab",
 
   // workbench.*
   "workbench.activityBar.location": "hidden",
