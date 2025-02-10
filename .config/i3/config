@@ -238,33 +238,14 @@ bar {
         tray_padding 6
 
         status_command ~/Code/spsjvc/bumblebee-status/bumblebee-status \
-                -m pomodoro \
-                -p pomodoro.work=50 \
-                -p pomodoro.break=10 \
                 -m pipewire \
+                -p pipewire.percent_change=5% \
+                -m brightness \
+                -p brightness.step=5 \
                 -m battery \
-                -m nic \
-                -p nic.states=up \
                 -m datetime \
-                -p datetime.format="%a %d/%m/%Y %H:%M:%S" \
-                -t gruvbox
-
-        colors {
-            background #1d2021
-        }
-}
-
-bar {
-        output primary
-        position bottom
-        tray_output none
-        workspace_buttons no
-
-        status_command ~/Code/spsjvc/bumblebee-status/bumblebee-status \
-                -m coingecko \
-                -m cpu \
-                -m memory \
-                -t gruvbox
+                -p datetime.format="%a %-d %b %H:%M" \
+                -t gruvbox-powerline
 
         colors {
             background #1d2021
