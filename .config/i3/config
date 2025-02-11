@@ -73,14 +73,14 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5% && $refresh
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%- && $refresh_i3status
 
 # Use i3lock-fancy to lock the screen
-bindsym $mod+Shift+q exec --no-startup-id i3lock-fancy -g -t ''
+bindsym $mod+Shift+q exec --no-startup-id i3lock-fancy -g -t '' -- scrot -o --format jpeg
 
 # Define screenshot file path and name
-set $scr_file ~/Pictures/Screenshots/%Y-%m-%d-at-%H-%M-%S.png
+set $scr_file ~/Pictures/Screenshots/%Y-%m-%d-at-%H-%M-%S.jpeg
 
 # Use scrot to take screenshots
-bindsym $mod+p       exec --no-startup-id scrot --select $scr_file --exec "xclip -selection clipboard -t image/png -i \$f"
-bindsym $mod+Shift+p exec --no-startup-id scrot          $scr_file --exec "xclip -selection clipboard -t image/png -i \$f"
+bindsym $mod+p       exec --no-startup-id scrot --select --quality 90 $scr_file --exec "xclip -selection clipboard -t image/jpeg -i \$f"
+bindsym $mod+Shift+p exec --no-startup-id scrot          --quality 90 $scr_file --exec "xclip -selection clipboard -t image/jpeg -i \$f"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
