@@ -72,6 +72,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5% && $refresh_i3status
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%- && $refresh_i3status
 
+# Use i3lock-fancy to lock the screen
+bindsym $mod+Shift+q exec --no-startup-id i3lock-fancy -g -t ''
+
 # Define screenshot file path and name
 set $scr_file ~/Pictures/Screenshots/%Y-%m-%d-at-%H-%M-%S.png
 
