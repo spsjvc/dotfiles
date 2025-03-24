@@ -37,13 +37,16 @@
   // terminal.*
   "terminal.integrated.fontFamily": "Iosevka Term Slab",
 
+  // window.*
+  "window.titleBarStyle": "native",
+
   // workbench.*
   "workbench.activityBar.location": "hidden",
   "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "eq-material-theme-icons-light",
   "workbench.panel.opensMaximized": "always",
   "workbench.settings.editor": "json",
+  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.tree.renderIndentGuides": "always"
 }
