@@ -110,8 +110,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Create parent directories if necessary, with verbose output
 alias mkdir="mkdir -pv"
-# List all files in a long listing format
-alias ls="ls -l --almost-all --color --group-directories-first --human-readable --indicator-style=slash"
+# List folders and files in a long listing format
+#
+# Using ls
+# alias ls="ls --almost-all --color --group-directories-first --human-readable --indicator-style=slash"
+# Using eza
+alias ls="eza --almost-all --classify --group-directories-first --header"
+
 # Include custom utils
 source $DOTFILES/utils/wallpaper.sh
 
