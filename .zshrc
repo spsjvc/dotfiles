@@ -119,6 +119,7 @@ alias mkdir="mkdir -pv"
 alias ls="eza --almost-all --classify --group-directories-first --header"
 
 # Include custom utils
+source $DOTFILES/utils/open.sh
 source $DOTFILES/utils/wallpaper.sh
 
 # This loads fnm (https://github.com/Schniz/fnm)
