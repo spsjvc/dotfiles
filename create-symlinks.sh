@@ -11,6 +11,7 @@ declare -a dotfiles=(
 	".config/kitty/current-theme.conf"
 	# Other
 	".gitconfig"
+	".p10k.zsh"
 	".vimrc"
 	".zshrc"
 )
