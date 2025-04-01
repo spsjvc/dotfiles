@@ -256,6 +256,9 @@ bar {
         }
 }
 
+# Hide title bar in split layouts
+default_border pixel 2
+
 # Preferences for the floating terminal
 for_window [class="floating-terminal"] floating enable
 for_window [class="floating-terminal"] resize set 1280 720
