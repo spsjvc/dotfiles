@@ -35,7 +35,7 @@
   "prettier.trailingComma": "es5",
 
   // terminal.*
-  "terminal.integrated.fontFamily": "Iosevka Term Slab",
+  "terminal.integrated.fontFamily": "Maple Mono",
 
   // window.*
   "window.titleBarStyle": "native",
