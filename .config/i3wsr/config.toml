@@ -1,0 +1,15 @@
+[aliases.class]
+firefox = "Firefox"
+dolphin = "Dolphin"
+kitty = "Kitty"
+obsidian = "Obsidian"
+TelegramDesktop = "Telegram"
+zen = "Zen Browser"
+
+[icons]
+Chromium = ""
+Dolphin = ""
+Firefox = ""
+Kitty = ""
+Telegram = ""
+Spotify = ""

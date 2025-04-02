@@ -49,6 +49,9 @@ exec --no-startup-id picom -b
 # Start 1Password
 exec --no-startup-id 1password --silent
 
+# Start i3wsr for automatic workspace renaming
+exec_always --no-startup-id i3wsr
+
 # Set up touchpad
 exec --no-startup-id ~/Code/spsjvc/dotfiles/setup-touchpad.sh
 
