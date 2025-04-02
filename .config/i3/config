@@ -267,7 +267,3 @@ for_window [class="floating-terminal"] floating enable
 for_window [class="floating-terminal"] resize set 1280 720
 for_window [class="floating-terminal"] move position center
 
-# Preferences specific to the 3840x1600 ultrawide monitor
-#
-# Set windows to floating by default and with specific dimensions
-# for_window [class=".*"] floating enable resize set 1920 1200
