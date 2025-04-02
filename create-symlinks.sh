@@ -6,7 +6,9 @@ declare -a dotfiles=(
 	# Visual Studio Code
 	".config/Code/User/settings.json"
 	".config/Code/User/keybindings.json"
-	# i3wsr
+	# i3 and i3wsr
+	".config/i3/config"
+	".config/i3/$(hostname).conf"
 	".config/i3wsr/config.toml"
 	# Kitty
 	".config/kitty/kitty.conf"

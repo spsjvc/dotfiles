@@ -5,6 +5,9 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+# Include host-specific config
+include ~/.config/i3/`hostname`.conf
+
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
@@ -232,33 +235,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available
-bar {
-        output primary
-        position top
-        tray_output primary
-        tray_padding 6
-
-        status_command ~/Code/spsjvc/bumblebee-status/bumblebee-status \
-                -m aur-update \
-                -p aur-update.format="{}" \
-                -m pipewire \
-                -p pipewire.percent_change=5% \
-                -m brightness \
-                -p brightness.step=5 \
-                -m battery \
-                -m weather \
-                -p weather.showcity="false" \
-                -m datetime \
-                -p datetime.format="%a %-d %b %H:%M" \
-                -t gruvbox-powerline
-
-        colors {
-            background #1d2021
-        }
-}
-
 # Hide title bar in split layouts
 default_border pixel 2
 
@@ -266,4 +242,3 @@ default_border pixel 2
 for_window [class="floating-terminal"] floating enable
 for_window [class="floating-terminal"] resize set 1280 720
 for_window [class="floating-terminal"] move position center
-
