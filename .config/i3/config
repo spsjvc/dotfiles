@@ -43,6 +43,9 @@ exec --no-startup-id ~/.fehbg &
 # Start redshift for automatic screen color temperature adjustment
 exec --no-startup-id redshift-gtk
 
+# Start dunst notification daemon
+exec --no-startup-id dunst
+
 # Start picom compositor
 exec --no-startup-id picom -b
 
