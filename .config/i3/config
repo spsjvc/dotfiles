@@ -103,6 +103,9 @@ bindsym $mod+Shift+Return exec --no-startup-id kitty --class floating-terminal
 # kill focused window
 bindsym $mod+w kill
 
+# start a new default web browser window
+bindsym $mod+i exec --no-startup-id $(xdg-settings get default-web-browser | sed 's/\.desktop//') --new-window about:newtab
+
 # start dmenu (a program launcher)
 bindsym $mod+space exec --no-startup-id rofi -combi-modes drun#window#run -show combi -show-icons
 # A more modern dmenu replacement is rofi:
