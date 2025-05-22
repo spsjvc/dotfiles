@@ -27,3 +27,7 @@ do
 	# Create a symlink targeting the dotfiles directory in the home directory
 	symlink "$(pwd)/$dotfile" "$HOME/$dotfile"
 done
+
+# Point Cursor settings to Visual Studio Code settings
+symlink "$HOME/.config/Code/User/settings.json" "$HOME/.config/Cursor/User/settings.json"
+symlink "$HOME/.config/Code/User/keybindings.json" "$HOME/.config/Cursor/User/keybindings.json"
