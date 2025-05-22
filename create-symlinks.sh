@@ -13,6 +13,8 @@ declare -a dotfiles=(
 	# Kitty
 	".config/kitty/kitty.conf"
 	".config/kitty/current-theme.conf"
+	# Zellij
+	".config/zellij/config.kdl"
 	# Other
 	".gitconfig"
 	".p10k.zsh"
