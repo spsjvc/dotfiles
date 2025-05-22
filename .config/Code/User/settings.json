@@ -29,6 +29,9 @@
   // git.*
   "git.mergeEditor": false,
 
+  // keyboard.*
+  "keyboard.dispatch": "keyCode",
+
   // prettier.*
   "prettier.quoteProps": "consistent",
   "prettier.singleQuote": true,
@@ -38,15 +41,21 @@
   "terminal.integrated.fontFamily": "Maple Mono",
 
   // window.*
-  "window.titleBarStyle": "native",
+  "window.commandCenter": false,
+  "window.title": "${rootName}${separator}${appName}",
+  "window.titleSeparator": " — ",
+  "window.titleBarStyle": "custom",
 
   // workbench.*
   "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Default Dark Modern",
   "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "workbench.editor.showTabs": "single",
+  "workbench.iconTheme": "catppuccin-mocha",
   "workbench.panel.opensMaximized": "always",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
+  "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always"
 }
