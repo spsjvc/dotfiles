@@ -2,6 +2,10 @@
   // breadcrumbs.*
   "breadcrumbs.enabled": false,
 
+  // catppuccin.*
+  "catppuccin.italicComments": true,
+  "catppuccin.italicKeywords": false,
+
   // diffEditor.*
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
@@ -48,7 +52,7 @@
 
   // workbench.*
   "workbench.activityBar.location": "hidden",
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.showTabs": "single",
   "workbench.iconTheme": "catppuccin-mocha",
