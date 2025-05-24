@@ -106,13 +106,9 @@ bindsym $mod+w kill
 # start a new default web browser window
 bindsym $mod+i exec --no-startup-id $(xdg-settings get default-web-browser | sed 's/\.desktop//') --new-window about:newtab
 
-# start dmenu (a program launcher)
-bindsym $mod+space exec --no-startup-id rofi -combi-modes drun#window#run -show combi -show-icons
-# A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+# start rofi
+bindsym $mod+space       exec --no-startup-id rofi -show drun        -show-icons
+bindsym $mod+Shift+space exec --no-startup-id rofi -show filebrowser -show-icons
 
 # change focus
 bindsym $mod+h focus left
