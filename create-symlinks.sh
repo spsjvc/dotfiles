@@ -15,6 +15,7 @@ declare -a dotfiles=(
 	".config/kitty/current-theme.conf"
 	# Rofi
 	".config/rofi/config.rasi"
+	".config/rofi/themes/simple-tokyonight.rasi"
 	# Zellij
 	".config/zellij/config.kdl"
 	# Other

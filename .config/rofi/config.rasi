@@ -155,4 +155,4 @@ configuration {
   }
 }
 
-@theme "gruvbox-dark"
+@theme ".config/rofi/themes/simple-tokyonight.rasi"
