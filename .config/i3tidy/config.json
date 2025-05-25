@@ -1,0 +1,44 @@
+{
+  "Chromium": {
+    "icon": " "
+  },
+  "Code": {
+    "icon": "󰨞 ",
+    "name_regex": "^(.+?)\\s*[-—]\\s*(?:Visual Studio Code|Code(?: - OSS)?)(?:.*)$"
+  },
+  "Cursor": {
+    "icon": "󰇀",
+    "name_regex": "^(.+?)\\s*[-—]\\s*Cursor(?:.*)$"
+  },
+  "dolphin": {
+    "icon": " ",
+    "name_regex": "^(.+?)\\s*[-—]\\s*Dolphin(?:.*)$"
+  },
+  "firefox": {
+    "icon": "󰈹 "
+  },
+  "kitty": {
+    "icon": " ",
+    "name_full": true
+  },
+  "obsidian": {
+    "icon": " ",
+    "name_regex": "^(.+?)\\s*[-—]\\s*Notes\\s*[-—]\\s*Obsidian.*$"
+  },
+  "Slack": {
+    "icon": " "
+  },
+  "Spotify": {
+    "icon": " "
+  },
+  "TelegramDesktop": {
+    "icon": " "
+  },
+  "Thunar": {
+    "icon": " ",
+    "name_regex": "^(.+?)\\s*[-—]\\s*Thunar(?:.*)$"
+  },
+  "zen": {
+    "icon": "󰈹 "
+  }
+}
