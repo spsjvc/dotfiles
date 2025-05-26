@@ -55,6 +55,7 @@
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.showTabs": "single",
+  "workbench.fontAliasing": "auto",
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.panel.opensMaximized": "always",
   "workbench.settings.editor": "json",
