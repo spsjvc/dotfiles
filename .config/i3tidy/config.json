@@ -21,6 +21,10 @@
     "icon": " ",
     "name_full": true
   },
+  "kitty-floating": {
+    "icon": " ",
+    "name_full": true
+  },
   "obsidian": {
     "icon": " ",
     "name_regex": "^(.+?)\\s*[-—]\\s*Notes\\s*[-—]\\s*Obsidian.*$"

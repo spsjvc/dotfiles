@@ -96,9 +96,9 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec       --no-startup-id kitty
 # start a floating terminal
-bindsym $mod+Shift+Return exec --no-startup-id kitty --class floating-terminal
+bindsym $mod+Shift+Return exec --no-startup-id kitty --class kitty-floating
 
 # kill focused window
 bindsym $mod+w kill
@@ -241,6 +241,6 @@ bindsym $mod+r mode "resize"
 default_border pixel 1
 
 # Preferences for the floating terminal
-for_window [class="floating-terminal"] floating enable
-for_window [class="floating-terminal"] resize set 1280 720
-for_window [class="floating-terminal"] move position center
+for_window [class="kitty-floating"] floating enable
+for_window [class="kitty-floating"] resize set 1280 720
+for_window [class="kitty-floating"] move position center
