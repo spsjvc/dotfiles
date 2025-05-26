@@ -13,6 +13,8 @@ declare -a dotfiles=(
 	# Kitty
 	".config/kitty/kitty.conf"
 	".config/kitty/current-theme.conf"
+	# Picom
+	".config/picom/picom.conf"
 	# Rofi
 	".config/rofi/config.rasi"
 	# Zellij

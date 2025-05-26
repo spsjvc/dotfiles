@@ -46,11 +46,11 @@ exec --no-startup-id redshift-gtk
 # Start dunst notification daemon
 exec --no-startup-id dunst
 
-# Start picom compositor
-exec --no-startup-id picom -b
-
 # Start 1Password
 exec --no-startup-id 1password --silent
+
+# Start the Picom compositor
+exec_always --no-startup-id picom -b
 
 # Start i3tidy for automatic workspace renaming
 exec_always --no-startup-id i3tidy
