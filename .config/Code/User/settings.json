@@ -46,12 +46,14 @@
 
   // window.*
   "window.commandCenter": false,
+  "window.customTitleBarVisibility": "auto",
   "window.title": "${rootName}${separator}${appName}",
   "window.titleSeparator": " — ",
   "window.titleBarStyle": "custom",
 
   // workbench.*
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "top",
+  "workbench.activityBar.orientation": "horizontal",
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.showTabs": "single",
