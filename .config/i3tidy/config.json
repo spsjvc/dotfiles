@@ -1,4 +1,8 @@
 {
+  "1Password": {
+    "icon": "󰯄 ",
+    "name_regex": "^(.+?)\\s*[-—]\\s*1Password(?:.*)$"
+  },
   "Chromium": {
     "icon": " "
   },
@@ -33,7 +37,8 @@
     "icon": " "
   },
   "Spotify": {
-    "icon": " "
+    "icon": " ",
+    "name_full": true
   },
   "TelegramDesktop": {
     "icon": " "
