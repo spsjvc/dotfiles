@@ -3,6 +3,8 @@
 source ./utils/symlink.sh
 
 declare -a dotfiles=(
+	# Aviator
+	".config/av/config.yaml"
 	# Visual Studio Code
 	".config/Code/User/settings.json"
 	".config/Code/User/keybindings.json"
