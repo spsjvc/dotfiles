@@ -17,13 +17,33 @@
   },
   {
     "key": "ctrl+j",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "isLinux & terminalFocus"
+  },
+  {
+    "key": "ctrl+j",
     "command": "workbench.action.nextEditor",
-    "when": "isLinux"
+    "when": "isLinux && !terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "isLinux & terminalFocus"
   },
   {
     "key": "ctrl+k",
     "command": "workbench.action.previousEditor",
-    "when": "isLinux"
+    "when": "isLinux && !terminalFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.new",
+    "when": "isLinux && terminalFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "isLinux && terminalFocus"
   },
   // Mac
   {
@@ -55,6 +75,12 @@
   {
     "key": "ctr+l",
     "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "\\\r\n" },
     "when": "terminalFocus"
   }
 ]
