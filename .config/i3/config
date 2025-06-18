@@ -103,8 +103,8 @@ bindsym $mod+Shift+Return exec --no-startup-id kitty --class kitty-floating
 # kill focused window
 bindsym $mod+w kill
 
-# start a new default web browser window
-bindsym $mod+i exec --no-startup-id $(xdg-settings get default-web-browser | sed 's/\.desktop//') --new-window about:newtab
+# open up the bookmarks menu
+bindsym $mod+i exec --no-startup-id ~/Code/spsjvc/dotfiles/utils/bookmarks.sh
 
 # start rofi
 bindsym $mod+space       exec --no-startup-id rofi -show drun        -show-icons
