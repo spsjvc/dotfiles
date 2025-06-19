@@ -5,69 +5,95 @@
 
 BOOKMARKS_FILE="${HOME}/.bookmarks"
 
-# Check if bookmarks file exists, create a default one if not found
-if [[ ! -f "$BOOKMARKS_FILE" ]]; then
+# Create default bookmarks file
+create_default_bookmarks_file() {
     echo "Creating default bookmarks file: $BOOKMARKS_FILE"
     {
         echo "https://github.com/davatorium/rofi|Rofi"
         echo "https://wiki.archlinux.org|Arch Wiki|archlinux"
     } > "$BOOKMARKS_FILE"
-fi
+}
 
-# Read bookmarks and format them for rofi with icons
-# Uses rofi's native icon format: title\0icon\x1f<icon_name>
-selected=$(while IFS='|' read -r url title icon; do
-    if [[ -n "$title" ]]; then
-        # Entry has a title
-        if [[ -n "$icon" ]]; then
-            # Use provided icon
-            printf "%s\0icon\x1f%s\n" "$title" "$icon"
+# Generate rofi menu from bookmarks file
+generate_rofi_menu_items() {
+    while IFS='|' read -r url title icon; do
+        if [[ -n "$title" ]]; then
+            # Entry has a title
+            if [[ -n "$icon" ]]; then
+                # Use provided icon
+                printf "%s\0icon\x1f%s\n" "$title" "$icon"
+            else
+                # Use fallback icon
+                printf "%s\0icon\x1f%s\n" "$title" "web-browser"
+            fi
         else
-            # Use fallback icon
-            printf "%s\0icon\x1f%s\n" "$title" "web-browser"
+            # Entry has no title, display URL with fallback icon
+            printf "%s\0icon\x1f%s\n" "$url" "web-browser"
         fi
-    else
-        # Entry has no title, display URL with fallback icon
-        printf "%s\0icon\x1f%s\n" "$url" "web-browser"
-    fi
-done < "$BOOKMARKS_FILE" | rofi -dmenu -p "Bookmarks" -show-icons -i)
+    done < "$BOOKMARKS_FILE"
+}
 
-# If user selected something, find the corresponding URL and open it
-if [[ -n "$selected" ]]; then
-    # Clean the selected text (rofi returns just the title)
-    selected_title="$selected"
+# Find bookmark URL by title or direct URL match
+find_bookmark_by_title_or_url() {
+    local selected_title="$1"
 
-    # Find the URL for the selected bookmark
-    url=$(while IFS='|' read -r bookmark_url bookmark_title bookmark_icon; do
+    while IFS='|' read -r bookmark_url bookmark_title bookmark_icon; do
         if [[ -n "$bookmark_title" && "$bookmark_title" == "$selected_title" ]]; then
             # Match by title
             echo "$bookmark_url"
-            break
-        elif [[ -z "$bookmark_title" && "$bookmark_url" == "$selected" ]]; then
+            return
+        elif [[ -z "$bookmark_title" && "$bookmark_url" == "$selected_title" ]]; then
             # Match by URL (for entries without titles)
             echo "$bookmark_url"
-            break
+            return
         fi
-    done < "$BOOKMARKS_FILE")
+    done < "$BOOKMARKS_FILE"
+}
 
-    # If no URL found in bookmarks, check if the input looks like a URL
-    if [[ -z "$url" ]]; then
-        # Check if the selected text looks like a URL
-        if [[ "$selected" =~ ^https?:// ]] || [[ "$selected" =~ ^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(/.*)?$ ]]; then
-            # It looks like a URL, use it directly
-            url="$selected"
-            # Add https:// prefix if no protocol specified
-            if [[ ! "$url" =~ ^https?: ]]; then
-                url="https://$url"
-            fi
-        else
-            # Not a URL, treat as search query for DuckDuckGo
-            url="https://duckduckgo.com/?q=$(printf '%s' "$selected" | sed 's/ /+/g')"
+# Handle input that's not in bookmarks (URL or search query)
+handle_bookmark_doesnt_exist() {
+    local input="$1"
+
+    # Check if the input looks like a URL
+    if [[ "$input" =~ ^https?:// ]] || [[ "$input" =~ ^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(/.*)?$ ]]; then
+        # It looks like a URL, use it directly
+        local url="$input"
+        # Add https:// prefix if no protocol specified
+        if [[ ! "$url" =~ ^https?: ]]; then
+            url="https://$url"
         fi
+        echo "$url"
+    else
+        # Not a URL, treat as search query for DuckDuckGo
+        echo "https://duckduckgo.com/?q=$(printf '%s' "$input" | sed 's/ /+/g')"
+    fi
+}
+
+main() {
+    if [[ ! -f "$BOOKMARKS_FILE" ]]; then
+        create_default_bookmarks_file
     fi
 
-    # Open the URL with the default application
-    if [[ -n "$url" ]]; then
-        xdg-open "$url"
+    selected=$(generate_rofi_menu_items | rofi -dmenu -p "Bookmarks" -show-icons -i)
+
+    # If user selected something, find the corresponding URL and open it
+    if [[ -n "$selected" ]]; then
+        # Clean the selected text (rofi returns just the title)
+        selected_item="$selected"
+
+        # Find the URL for the selected bookmark
+        url=$(find_bookmark_by_title_or_url "$selected_item")
+
+        # If no URL found in bookmarks, handle as URL or search query
+        if [[ -z "$url" ]]; then
+            url=$(handle_bookmark_doesnt_exist "$selected")
+        fi
+
+        # Open the URL with the default application
+        if [[ -n "$url" ]]; then
+            xdg-open "$url"
+        fi
     fi
-fi
+}
+
+main
