@@ -50,6 +50,19 @@ if [[ -n "$selected" ]]; then
         fi
     done < "$BOOKMARKS_FILE")
 
+    # If no URL found in bookmarks, check if the input looks like a URL
+    if [[ -z "$url" ]]; then
+        # Check if the selected text looks like a URL
+        if [[ "$selected" =~ ^https?:// ]] || [[ "$selected" =~ ^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(/.*)?$ ]]; then
+            # It looks like a URL, use it directly
+            url="$selected"
+            # Add https:// prefix if no protocol specified
+            if [[ ! "$url" =~ ^https?: ]]; then
+                url="https://$url"
+            fi
+        fi
+    fi
+
     # Open the URL with the default application
     if [[ -n "$url" ]]; then
         xdg-open "$url"
