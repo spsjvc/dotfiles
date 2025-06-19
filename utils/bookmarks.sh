@@ -60,6 +60,9 @@ if [[ -n "$selected" ]]; then
             if [[ ! "$url" =~ ^https?: ]]; then
                 url="https://$url"
             fi
+        else
+            # Not a URL, treat as search query for DuckDuckGo
+            url="https://duckduckgo.com/?q=$(printf '%s' "$selected" | sed 's/ /+/g')"
         fi
     fi
 
