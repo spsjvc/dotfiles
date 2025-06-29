@@ -14,7 +14,8 @@ declare -a dotfiles=(
 	".config/i3tidy/config.json"
 	# Kitty
 	".config/kitty/kitty.conf"
-	".config/kitty/current-theme.conf"
+	".config/kitty/Catppuccin-Latte.conf"
+	".config/kitty/Catppuccin-Mocha.conf"
 	# Picom
 	".config/picom/picom.conf"
 	# Rofi
