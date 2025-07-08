@@ -8,6 +8,8 @@ declare -a dotfiles=(
 	# Visual Studio Code
 	".config/Code/User/settings.json"
 	".config/Code/User/keybindings.json"
+    # Hyprland
+    ".config/hypr/hyprland.conf"
 	# i3 and i3tidy
 	".config/i3/config"
 	".config/i3/$(hostname).conf"
