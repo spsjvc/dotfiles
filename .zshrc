@@ -130,3 +130,6 @@ export GPG_TTY=$(tty)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Replace cd with zoxide
+eval "$(zoxide init --cmd cd zsh)"
