@@ -18,6 +18,7 @@ declare -a dotfiles=(
 	".config/kitty/kitty.conf"
 	".config/kitty/Catppuccin-Latte.conf"
 	".config/kitty/Catppuccin-Mocha.conf"
+	".config/kitty/Catppuccin-Mocha-Custom.conf"
 	# Picom
 	".config/picom/picom.conf"
 	# Rofi
