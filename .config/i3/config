@@ -107,6 +107,9 @@ bindsym $mod+w kill
 # open up the bookmarks menu
 bindsym $mod+i exec --no-startup-id ~/Code/spsjvc/dotfiles/utils/bookmarks.sh
 
+# run supertinywhisper (https://github.com/spsjvc/supertinywhisper)
+bindsym $mod+u exec --no-startup-id ~/Code/spsjvc/supertinywhisper/run.sh
+
 # start rofi
 bindsym $mod+space       exec --no-startup-id rofi -show drun        -show-icons
 bindsym $mod+Shift+space exec --no-startup-id rofi -show filebrowser -show-icons
