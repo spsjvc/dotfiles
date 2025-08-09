@@ -128,7 +128,8 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 
 # This enables passphrase prompt for gpg, which is used when signing a commit
 export GPG_TTY=$(tty)
-
+# This adds the local bin directory to PATH
+export PATH="$HOME/.local/bin:$PATH"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
