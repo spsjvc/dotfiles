@@ -43,6 +43,7 @@
 
   // terminal.*
   "terminal.integrated.fontFamily": "Maple Mono",
+  "terminal.integrated.tabs.location": "left",
 
   // window.*
   "window.commandCenter": false,
@@ -61,7 +62,7 @@
   "workbench.iconTheme": "catppuccin-mocha",
   "workbench.panel.opensMaximized": "always",
   "workbench.settings.editor": "json",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always"
