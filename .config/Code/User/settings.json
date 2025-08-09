@@ -33,6 +33,9 @@
   // git.*
   "git.mergeEditor": false,
 
+  // github.*
+  "github.copilot.nextEditSuggestions.enabled": true,
+
   // keyboard.*
   "keyboard.dispatch": "keyCode",
 
