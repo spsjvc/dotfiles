@@ -47,6 +47,7 @@
     r = reset HEAD
     s = status
     u = reset --soft HEAD^
+    wt = worktree
 
 [commit]
     gpgsign = true
