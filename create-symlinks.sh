@@ -25,6 +25,9 @@ declare -a dotfiles=(
 	".config/rofi/config.rasi"
 	# Zellij
 	".config/zellij/config.kdl"
+	# Claude Code
+	".claude/settings.json"
+	".claude/statusline.sh"
 	# Other
 	".gitconfig"
 	".p10k.zsh"
