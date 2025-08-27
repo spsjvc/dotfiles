@@ -10,30 +10,10 @@
     "command": "workbench.action.splitEditorRight",
     "when": "isLinux"
   },
-  // if terminal is not open, open it and close sidebar
   {
     "key": "ctrl+enter",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        //
-        "workbench.action.terminal.focus",
-        "workbench.action.closeSidebar"
-      ]
-    },
-    "when": "isLinux && !terminalFocus"
-  },
-  // if terminal is already open, close it and open sidebar
-  {
-    "key": "ctrl+enter",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "workbench.action.terminal.toggleTerminal",
-        "workbench.action.toggleSidebarVisibility"
-      ]
-    },
-    "when": "isLinux && terminalFocus"
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "isLinux"
   },
   {
     "key": "ctrl+j",
