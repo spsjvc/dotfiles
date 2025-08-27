@@ -49,17 +49,17 @@
   "terminal.integrated.tabs.location": "left",
 
   // window.*
-  "window.commandCenter": false,
+  "window.commandCenter": true,
   "window.customTitleBarVisibility": "auto",
+  "window.menuBarVisibility": "hidden",
   "window.title": "${rootName}${separator}${appName}",
+  "window.titleBarStyle": "native",
   "window.titleSeparator": " — ",
-  "window.titleBarStyle": "custom",
 
   // workbench.*
-  "workbench.activityBar.location": "top",
-  "workbench.activityBar.orientation": "horizontal",
+  "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.editorActionsLocation": "titleBar",
   "workbench.editor.showTabs": "single",
   "workbench.fontAliasing": "auto",
   "workbench.iconTheme": "catppuccin-mocha",
