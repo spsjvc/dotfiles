@@ -14,7 +14,7 @@
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Cascadia Code",
+  "editor.fontFamily": "CaskaydiaCove Nerd Font",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
@@ -45,7 +45,7 @@
   "prettier.trailingComma": "es5",
 
   // terminal.*
-  "terminal.integrated.fontFamily": "Maple Mono",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
   "terminal.integrated.tabs.location": "left",
 
   // window.*
