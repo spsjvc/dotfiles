@@ -1,53 +1,62 @@
 {
   "1Password": {
-    "icon": "󰯄 ",
-    "name_regex": "^(.+?)\\s*[-—]\\s*1Password(?:.*)$"
+    "icon": "󰯄"
+  },
+  "Blueman-manager": {
+    "icon": "󰂯"
   },
   "Chromium": {
-    "icon": " "
+    "icon": ""
   },
   "Code": {
-    "icon": "󰨞 ",
+    "icon": "󰨞",
     "name_regex": "^(.+?)\\s*[-—]\\s*(?:Visual Studio Code|Code(?: - OSS)?)(?:.*)$"
   },
   "Cursor": {
     "icon": "󰇀",
     "name_regex": "^(.+?)\\s*[-—]\\s*Cursor(?:.*)$"
   },
+  "discord": {
+    "icon": ""
+  },
   "dolphin": {
-    "icon": " ",
+    "icon": "",
     "name_regex": "^(.+?)\\s*[-—]\\s*Dolphin(?:.*)$"
   },
   "firefox": {
-    "icon": "󰈹 "
+    "icon": "󰈹"
   },
   "kitty": {
-    "icon": " ",
-    "name_full": true
+    "icon": ""
   },
   "kitty-floating": {
-    "icon": " ",
-    "name_full": true
+    "icon": ""
   },
   "obsidian": {
-    "icon": " ",
+    "icon": "",
     "name_regex": "^(.+?)\\s*[-—]\\s*Notes\\s*[-—]\\s*Obsidian.*$"
   },
+  "pavucontrol": {
+    "icon": ""
+  },
   "Slack": {
-    "icon": " "
+    "icon": ""
   },
   "Spotify": {
-    "icon": " ",
+    "icon": "",
     "name_full": true
   },
+  "steam": {
+    "icon": "󰓓"
+  },
   "TelegramDesktop": {
-    "icon": " "
+    "icon": ""
   },
   "Thunar": {
-    "icon": " ",
+    "icon": "",
     "name_regex": "^(.+?)\\s*[-—]\\s*Thunar(?:.*)$"
   },
   "zen": {
-    "icon": "󰈹 "
+    "icon": "󰈹"
   }
 }
