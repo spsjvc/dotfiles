@@ -33,8 +33,7 @@
     "icon": ""
   },
   "obsidian": {
-    "icon": "",
-    "name_regex": "^(.+?)\\s*[-—]\\s*Notes\\s*[-—]\\s*Obsidian.*$"
+    "icon": "󰇈"
   },
   "pavucontrol": {
     "icon": ""
@@ -43,8 +42,7 @@
     "icon": ""
   },
   "Spotify": {
-    "icon": "",
-    "name_full": true
+    "icon": ""
   },
   "steam": {
     "icon": "󰓓"
