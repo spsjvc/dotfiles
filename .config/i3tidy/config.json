@@ -12,6 +12,9 @@
     "icon": "󰨞",
     "name_regex": "^(.+?)\\s*[-—]\\s*(?:Visual Studio Code|Code(?: - OSS)?)(?:.*)$"
   },
+  "com.mitchellh.ghostty": {
+    "icon": ""
+  },
   "Cursor": {
     "icon": "󰇀",
     "name_regex": "^(.+?)\\s*[-—]\\s*Cursor(?:.*)$"
