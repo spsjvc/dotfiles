@@ -3,6 +3,11 @@ cursor-style-blink = false
 
 font-family = CaskaydiaCove Nerd Font
 
+# keep the systemd service running in the background for instant startup
+#
+# https://ghostty.org/docs/linux/systemd
+quit-after-last-window-closed = false
+
 # https://ghostty.org/docs/config/reference#shell-integration-features
 shell-integration-features = no-cursor, title
 
