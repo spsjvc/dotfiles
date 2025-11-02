@@ -3,6 +3,8 @@
 source ./utils/symlink.sh
 
 declare -a dotfiles=(
+	# AeroSpace
+	".config/aerospace/aerospace.toml"
 	# Aviator
 	".config/av/config.yaml"
 	# Visual Studio Code
