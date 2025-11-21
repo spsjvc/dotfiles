@@ -41,8 +41,12 @@ declare -a dotfiles=(
 
 for dotfile in "${dotfiles[@]}"
 do
-	# Create a symlink targeting the dotfiles directory in the home directory
-	symlink "$(pwd)/$dotfile" "$HOME/$dotfile"
+	# Create a symlink in the home directory targeting the dotfiles directory
+	if symlink "$(pwd)/$dotfile" "$HOME/$dotfile"; then
+		echo "🟢 $HOME/$dotfile"
+	else
+		echo "🔴 $HOME/$dotfile"
+	fi
 done
 
 # Point Cursor settings to Visual Studio Code settings
