@@ -26,7 +26,6 @@ declare -a dotfiles_common=(
 	".claude/statusline.sh"
 	# Other
 	".gitconfig"
-	".p10k.zsh"
 	".vimrc"
 	".zshrc"
 )
