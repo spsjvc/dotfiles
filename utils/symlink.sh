@@ -28,3 +28,14 @@ symlink() {
 		return $?
 	fi
 }
+
+symlink_with_status() {
+	target=$1
+	link=$2
+
+	if symlink "$target" "$link"; then
+		echo "🟢 $link"
+	else
+		echo "🔴 $link"
+	fi
+}

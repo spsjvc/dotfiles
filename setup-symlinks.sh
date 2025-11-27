@@ -63,16 +63,14 @@ fi
 
 for dotfile in "${dotfiles[@]}"
 do
-	# Create a symlink in the home directory targeting the dotfiles directory
-	if symlink "$(pwd)/$dotfile" "$HOME/$dotfile"; then
-		echo "🟢 $HOME/$dotfile"
-	else
-		echo "🔴 $HOME/$dotfile"
-	fi
+	symlink_with_status "$(pwd)/$dotfile" "$HOME/$dotfile"
 done
+
+# Point ~/Developer to ~/Code so both work
+symlink_with_status "$HOME/Code" "$HOME/Developer"
 
 # On macOS, point Visual Studio Code settings to Linux paths
 if [ "$PLATFORM" = "Darwin" ]; then
-	symlink "$HOME/.config/Code/User/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
-	symlink "$HOME/.config/Code/User/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
+	symlink_with_status "$HOME/.config/Code/User/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+	symlink_with_status "$HOME/.config/Code/User/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
 fi
