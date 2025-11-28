@@ -5,7 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST-$ZSH_VERSION"
 # Path to dotfiles
-export DOTFILES="$HOME/Code/spsjvc/dotfiles"
+export DOTFILES="$HOME/Code/github.com/spsjvc/dotfiles"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

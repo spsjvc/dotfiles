@@ -35,7 +35,7 @@
     a = add
     b = checkout -b
     c = commit --allow-empty --gpg-sign -m
-    commit-generate = !source ~/Code/spsjvc/dotfiles/utils/git-commit-generate.sh && git_commit_generate
+    commit-generate = !source ~/Code/github.com/spsjvc/dotfiles/utils/git-commit-generate.sh && git_commit_generate
     cg = commit-generate
     co = checkout
     d = diff

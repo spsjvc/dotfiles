@@ -60,7 +60,7 @@ exec_always --no-startup-id i3tidy
 exec_always setxkbmap -option caps:swapescape
 
 # Set up touchpad
-exec_always --no-startup-id ~/Code/spsjvc/dotfiles/setup-touchpad.sh
+exec_always --no-startup-id ~/Code/github.com/spsjvc/dotfiles/setup-touchpad.sh
 
 # Open 1Password as floating
 for_window [class="1Password"] floating enable
@@ -105,7 +105,7 @@ bindsym $mod+Shift+Return exec --no-startup-id kitty --class kitty-floating
 bindsym $mod+w kill
 
 # run supertinywhisper (https://github.com/spsjvc/supertinywhisper)
-bindsym $mod+u exec --no-startup-id ~/Code/spsjvc/supertinywhisper/run.sh
+bindsym $mod+u exec --no-startup-id ~/Code/github.com/spsjvc/supertinywhisper/run.sh
 
 # start rofi
 bindsym $mod+space       exec --no-startup-id rofi -show drun        -show-icons
