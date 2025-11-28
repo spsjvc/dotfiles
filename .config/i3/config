@@ -104,9 +104,6 @@ bindsym $mod+Shift+Return exec --no-startup-id kitty --class kitty-floating
 # kill focused window
 bindsym $mod+w kill
 
-# open up the bookmarks menu
-bindsym $mod+i exec --no-startup-id ~/Code/spsjvc/dotfiles/utils/bookmarks.sh
-
 # run supertinywhisper (https://github.com/spsjvc/supertinywhisper)
 bindsym $mod+u exec --no-startup-id ~/Code/spsjvc/supertinywhisper/run.sh
 

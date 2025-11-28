@@ -120,7 +120,6 @@ alias ls="eza --almost-all --classify --group-directories-first --header"
 
 # Include custom utils
 source $DOTFILES/utils/open.sh
-source $DOTFILES/utils/wallpaper.sh
 source $DOTFILES/utils/git-commit-generate.sh
 
 # This loads fnm (https://github.com/Schniz/fnm)
