@@ -24,6 +24,8 @@ declare -a dotfiles_common=(
 	# Claude Code
 	".claude/settings.json"
 	".claude/statusline.sh"
+	# Starship
+	".config/starship.toml"
 	# Other
 	".gitconfig"
 	".vimrc"
