@@ -1,7 +1,7 @@
 cursor-style = block
 cursor-style-blink = false
 
-font-family = CaskaydiaCove Nerd Font
+font-family = 0xProto Nerd Font Propo
 
 # keep the systemd service running in the background for instant startup
 #

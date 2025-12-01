@@ -45,8 +45,9 @@
   "prettier.trailingComma": "es5",
 
   // terminal.*
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.integrated.fontFamily": "'0xProto Nerd Font Propo'",
   "terminal.integrated.tabs.location": "left",
+  "terminal.integrated.shellIntegration.enabled": false,
 
   // window.*
   "window.commandCenter": true,
