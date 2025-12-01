@@ -116,7 +116,7 @@ alias mkdir="mkdir -pv"
 # Using ls
 # alias ls="ls --almost-all --color --group-directories-first --human-readable --indicator-style=slash"
 # Using eza
-alias ls="eza --almost-all --classify --group-directories-first --header"
+alias ls="eza --almost-all --classify --group-directories-first --header --icons"
 
 # Include custom utils
 source $DOTFILES/utils/open.sh
