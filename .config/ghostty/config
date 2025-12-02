@@ -3,11 +3,6 @@ cursor-style-blink = false
 
 font-family = 0xProto Nerd Font Propo
 
-# keep the systemd service running in the background for instant startup
-#
-# https://ghostty.org/docs/linux/systemd
-quit-after-last-window-closed = false
-
 # https://ghostty.org/docs/config/reference#shell-integration-features
 shell-integration-features = no-cursor, title
 
@@ -16,6 +11,19 @@ window-decoration = server
 
 window-padding-x = 8
 window-padding-y = 8
+
+##### Linux
+
+# keep the systemd service running in the background for instant startup
+#
+# https://ghostty.org/docs/linux/systemd
+quit-after-last-window-closed = false
+
+##### macOS
+
+macos-titlebar-style = hidden
+
+##### Keybindings
 
 # split navigation
 keybind = alt+h=goto_split:left
