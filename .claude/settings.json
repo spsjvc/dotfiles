@@ -4,8 +4,13 @@
     "allow": [
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:docs.expo.dev)",
+      "WebFetch(domain:ghostty.org)",
       "WebFetch(domain:viem.sh)",
       "WebFetch(domain:vitest.dev)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)"
     ]
   },
   "statusLine": {
