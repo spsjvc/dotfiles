@@ -5,8 +5,11 @@
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:docs.expo.dev)",
       "WebFetch(domain:ghostty.org)",
+      "WebFetch(domain:tailwindcss.com)",
       "WebFetch(domain:viem.sh)",
-      "WebFetch(domain:vitest.dev)"
+      "WebFetch(domain:vitest.dev)",
+      "WebFetch(domain:vocs.dev)",
+      "WebFetch(domain:wagmi.sh)"
     ],
     "deny": [
       "Read(./.env)",
