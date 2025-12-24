@@ -42,7 +42,15 @@
     ds = diff --staged
     f = fetch
     fpush = push --force
-    l = log --graph --pretty=oneline --abbrev-commit
+    # Example output:
+    #
+    # * 6d1060b Update Ghostty config with platform-specific sections (HEAD -> main, origin/main, origin/HEAD)
+    # | 3 weeks ago by spsjvc
+    # * 51d807c Add setup script for platform-specific VS Code keybindings
+    # | 3 weeks ago by spsjvc
+    # * 2d3bd06 Add setup script for zsh plugins
+    # | 3 weeks ago by spsjvc
+    l = log --abbrev-commit --graph --pretty=format:'%C(auto)%h %s%d%n%C(dim white)%ar by %an'
     p = add --patch
     r = reset HEAD
     s = status
