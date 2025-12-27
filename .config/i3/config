@@ -103,7 +103,8 @@ bindsym $mod+Return exec --no-startup-id ghostty +new-window
 bindsym $mod+w kill
 
 # run supertinywhisper (https://github.com/spsjvc/supertinywhisper)
-bindsym $mod+u exec --no-startup-id ~/Code/github.com/spsjvc/supertinywhisper/run.sh
+bindsym $mod+u exec --no-startup-id supertinywhisper
+bindsym $mod+o exec --no-startup-id supertinywhisper --cancel
 
 # start rofi
 bindsym $mod+space       exec --no-startup-id rofi -show drun        -show-icons
