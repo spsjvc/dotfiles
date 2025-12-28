@@ -42,3 +42,6 @@ keybind = alt+w=close_surface
 
 # split equalize
 keybind = alt+e=equalize_splits
+
+# line continuation
+keybind = shift+enter=text:\\\n
