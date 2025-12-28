@@ -1,0 +1,22 @@
+{
+  "spacing": 16,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-right": ["pulseaudio", "backlight", "clock"],
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "scroll-step": 5,
+    "reverse-scrolling": true
+  },
+
+  "backlight": {
+    "format": " {percent}%",
+    "scroll-step": 5,
+    "reverse-scrolling": true
+  },
+
+  "clock": {
+    "format": "{:%a %d %b %H:%M}"
+  }
+}

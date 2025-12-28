@@ -1,0 +1,22 @@
+* {
+  font-family: '0xProto Nerd Font Propo';
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#workspaces button {
+  color: grey;
+}
+
+#workspaces button.active {
+  color: white;
+}
+
+.modules-right {
+  color: white;
+
+  padding-left: 16px;
+  padding-right: 16px;
+}

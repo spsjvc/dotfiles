@@ -44,6 +44,9 @@ declare -a dotfiles_linux=(
 	".config/picom/picom.conf"
 	# Rofi
 	".config/rofi/config.rasi"
+	# Waybar
+	".config/waybar/config.jsonc"
+	".config/waybar/style.css"
 	# X11
 	".xinitrc"
 )
