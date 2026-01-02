@@ -1,0 +1,20 @@
+general {
+        colors = true
+        interval = 5
+}
+
+order += "battery all"
+order += "tztime local"
+
+battery all {
+        // don't show module if no battery is found
+        format_down = ""
+        format = "BAT %percentage %status"
+
+        status_chr = "󱐋"
+        status_bat = ""
+}
+
+tztime local {
+        format = "%a %-d %b %H:%M"
+}
