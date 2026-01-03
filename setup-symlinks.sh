@@ -14,9 +14,6 @@ declare -a dotfiles_common=(
 	".config/Code/User/keybindings.json"
 	# Kitty
 	".config/kitty/kitty.conf"
-	".config/kitty/Catppuccin-Latte.conf"
-	".config/kitty/Catppuccin-Mocha.conf"
-	".config/kitty/Catppuccin-Mocha-Custom.conf"
 	# Ghostty
 	".config/ghostty/config"
 	# Zellij
