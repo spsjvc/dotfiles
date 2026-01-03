@@ -38,9 +38,8 @@ declare -a dotfiles_linux=(
 	".config/hypr/hyprland.conf"
 	# i3, i3tidy, i3status
 	".config/i3/config"
-	".config/i3/$(hostname).conf"
-	".config/i3/autostart.conf"
-	".config/i3/keybindings.conf"
+	".config/i3/config.d/autostart.conf"
+	".config/i3/config.d/keybindings.conf"
 	".config/i3tidy/config.json"
 	".config/i3status/config"
 	# Picom
