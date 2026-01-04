@@ -16,8 +16,6 @@ declare -a dotfiles_common=(
 	".config/kitty/kitty.conf"
 	# Ghostty
 	".config/ghostty/config"
-	# Zellij
-	".config/zellij/config.kdl"
 	# Claude Code
 	".claude/settings.json"
 	".claude/statusline.sh"
