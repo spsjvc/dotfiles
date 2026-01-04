@@ -23,6 +23,7 @@ declare -a dotfiles_common=(
 	".config/starship.toml"
 	# Other
 	".gitconfig"
+	".tmux.conf"
 	".vimrc"
 	".zshrc"
 )
