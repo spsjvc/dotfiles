@@ -1,7 +1,7 @@
 DEVICE_ID=$(xinput | grep -i 'touchpad' | grep -oP 'id=\K\d+')
 
 # Set acceleration speed
-xinput set-prop $DEVICE_ID "libinput Accel Speed" 0.9
+xinput set-prop $DEVICE_ID "libinput Accel Speed" 0.8
 
 # Enable two-finger right click
 xinput set-prop $DEVICE_ID "libinput Click Method Enabled" 0 1
