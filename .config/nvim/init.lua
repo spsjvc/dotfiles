@@ -15,6 +15,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Hybrid line numbers - absolute on current line, relative on other lines
+vim.opt.number = true
+vim.opt.relativenumber = true
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
