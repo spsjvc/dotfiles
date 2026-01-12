@@ -14,6 +14,3 @@ for_window [class="1Password"] floating enable
 
 # Open pavucontrol as floating
 for_window [class="Pavucontrol"] floating enable
-
-# Hide title bar in split layouts
-default_border pixel 1
