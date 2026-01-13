@@ -12,6 +12,8 @@ declare -a dotfiles_common=(
 	# Visual Studio Code
 	".config/Code/User/settings.json"
 	".config/Code/User/keybindings.json"
+	# Neovim
+	".config/nvim/init.lua"
 	# Kitty
 	".config/kitty/kitty.conf"
 	# Ghostty
@@ -38,8 +40,6 @@ declare -a dotfiles_linux=(
 	".config/i3/config.d/keybindings.conf"
 	".config/i3tidy/config.json"
 	".config/i3status/config"
-	# Neovim
-	".config/nvim/init.lua"
 	# Picom
 	".config/picom/picom.conf"
 	# Rofi
