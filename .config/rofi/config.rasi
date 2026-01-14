@@ -5,7 +5,7 @@ configuration {
 	}
 
 /*	modes: "window,drun,run,ssh";*/
-	font: "IosevkaTermSlab Nerd Font 20";
+	font: "Iosevka Nerd Font Propo 16";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
