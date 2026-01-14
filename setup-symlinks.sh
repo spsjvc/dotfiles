@@ -40,6 +40,8 @@ declare -a dotfiles_linux=(
 	".config/i3/config.d/keybindings.conf"
 	".config/i3tidy/config.json"
 	".config/i3status/config"
+	# Dunst
+	".config/dunst/dunstrc"
 	# Picom
 	".config/picom/picom.conf"
 	# Rofi
