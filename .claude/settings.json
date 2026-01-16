@@ -4,6 +4,12 @@
     "allow": [
       "mcp__ide__getDiagnostics",
 
+      "Bash(git blame*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git show*)",
+      "Bash(git status*)",
+
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:docs.expo.dev)",
       "WebFetch(domain:ghostty.org)",
