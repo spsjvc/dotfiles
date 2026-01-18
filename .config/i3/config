@@ -7,9 +7,3 @@ include ~/.config/i3/config.d/*.conf
 
 # Font for window titles. Will also be used by the bar unless a different font is used in the bar block.
 font pango:Iosevka Nerd Font Propo
-
-# Open 1Password as floating
-for_window [class="1Password"] floating enable
-
-# Open pavucontrol as floating
-for_window [class="Pavucontrol"] floating enable
