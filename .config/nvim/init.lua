@@ -23,14 +23,35 @@ vim.opt.relativenumber = true
 require("lazy").setup({
   spec = {
     {
-      'nvim-telescope/telescope.nvim', tag = 'v0.2.1',
+      'nvim-telescope/telescope.nvim',
+      tag = 'v0.2.1',
       dependencies = {
         'nvim-lua/plenary.nvim',
         -- optional but recommended
         { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
-      }
-    }
+      },
+      config = function()
+        require('telescope').setup({
+          defaults = {
+            file_ignore_patterns = { "^.git/" },
+            layout_strategy = "horizontal",
+            layout_config = {
+              horizontal = {
+                prompt_position = "top",
+                width = { padding = 0 },
+                height = { padding = 0 },
+                preview_width = 0.5,
+              },
+            },
+            sorting_strategy = "ascending",
+          }
+        })
+      end
+    },
   },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+
+-- Telescope keybindings
+vim.keymap.set('n', '<C-p>', '<cmd>Telescope find_files hidden=true<CR>', { noremap = true })
