@@ -1,7 +1,7 @@
 cursor-style = block
 cursor-style-blink = false
 
-font-family = 0xProto Nerd Font Propo
+font-family = CaskaydiaMono Nerd Font
 
 # https://ghostty.org/docs/config/reference#shell-integration-features
 shell-integration-features = no-cursor, title
