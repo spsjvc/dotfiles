@@ -47,7 +47,7 @@
     # * 5101376 Update tmux config to use vim keybindings in copy mode (HEAD -> main) 27 hours ago by spsjvc
     # * 683dd2f Remove resize mode from i3 keybindings config 2 days ago by spsjvc
     # * 576233a Update tmux config with status bar adjustments 3 days ago by spsjvc
-    l = log --abbrev-commit --graph --pretty=format:'%C(auto)%h %s%d %C(dim white)%ar by %an'
+    l = log --abbrev-commit --graph --pretty=format:'%C(auto)%h %s%d %C(dim white)%ar %C(cyan)%an'
     p = add --patch
     r = reset HEAD
     s = status
