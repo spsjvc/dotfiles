@@ -10,6 +10,8 @@
       "Bash(git show*)",
       "Bash(git status*)",
 
+      "Bash(tree*)",
+
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:docs.expo.dev)",
       "WebFetch(domain:ghostty.org)",
