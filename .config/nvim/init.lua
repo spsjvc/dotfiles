@@ -19,6 +19,13 @@ vim.opt.rtp:prepend(lazypath)
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- Highlight current line
+vim.opt.cursorline = true
+
+-- Show whitespace characters
+vim.opt.list = true
+vim.opt.listchars = { tab = '→ ', multispace = '·', trail = '·', nbsp = '␣', }
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
