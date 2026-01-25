@@ -117,6 +117,8 @@ alias mkdir="mkdir -pv"
 # alias ls="ls --almost-all --color --group-directories-first --human-readable --indicator-style=slash"
 # Using eza
 alias ls="eza --almost-all --classify --group-directories-first --header --icons"
+# Replace Vim with Neovim
+alias vim="nvim"
 
 # Include custom utils
 source $DOTFILES/utils/open.sh
