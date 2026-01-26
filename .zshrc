@@ -122,6 +122,7 @@ alias vim="nvim"
 
 # Include custom utils
 source $DOTFILES/utils/open.sh
+source $DOTFILES/utils/tmux.sh
 source $DOTFILES/utils/git-commit-generate.sh
 
 # This loads fnm (https://github.com/Schniz/fnm)
