@@ -11,6 +11,7 @@
       "Bash(git status*)",
 
       "Bash(tree*)",
+      "Bash(wc*)",
 
       "WebFetch(domain:docs.anthropic.com)",
       "WebFetch(domain:docs.expo.dev)",
