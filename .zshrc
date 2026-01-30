@@ -133,9 +133,13 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 export GPG_TTY=$(tty)
 # This adds the local bin directory to PATH
 export PATH="$HOME/.local/bin:$PATH"
+# OpenCode
+export PATH="$HOME/.opencode/bin:$PATH"
 
 # Replace cd with zoxide
 eval "$(zoxide init --cmd cd zsh)"
 
 # Initialize Starship prompt
 eval "$(starship init zsh)"
+
+
