@@ -22,9 +22,12 @@
       "WebFetch(domain:vocs.dev)",
       "WebFetch(domain:wagmi.sh)"
     ],
+    "ask": [
+      "Read(**/.env.*)",
+      "Read(**/.env-*)"
+    ],
     "deny": [
-      "Read(./.env)",
-      "Read(./.env.*)"
+      "Read(**/.env)"
     ]
   }
 }
