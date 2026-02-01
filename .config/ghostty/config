@@ -25,23 +25,5 @@ macos-titlebar-style = hidden
 
 ##### Keybindings
 
-# split navigation
-keybind = alt+h=goto_split:left
-keybind = alt+j=goto_split:down
-keybind = alt+k=goto_split:up
-keybind = alt+l=goto_split:right
-
-# split creation
-keybind = alt+enter>h=new_split:left
-keybind = alt+enter>j=new_split:down
-keybind = alt+enter>k=new_split:up
-keybind = alt+enter>l=new_split:right
-
-# split close
-keybind = alt+w=close_surface
-
-# split equalize
-keybind = alt+e=equalize_splits
-
 # line continuation
 keybind = shift+enter=text:\\\n
