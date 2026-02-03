@@ -1,0 +1,8 @@
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+ttf-cascadia-code-nerd
+ttf-cascadia-mono-nerd
+ttf-iosevka-nerd
+ttf-iosevkaterm-nerd
