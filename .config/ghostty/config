@@ -21,7 +21,7 @@ quit-after-last-window-closed = false
 
 ##### macOS
 
-macos-titlebar-style = hidden
+macos-titlebar-style = transparent
 
 ##### Keybindings
 
