@@ -14,8 +14,6 @@ declare -a dotfiles_common=(
 	".config/Code/User/keybindings.json"
 	# Neovim
 	".config/nvim/init.lua"
-	# Kitty
-	".config/kitty/kitty.conf"
 	# Ghostty
 	".config/ghostty/config"
 	# Claude Code
