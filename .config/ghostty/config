@@ -25,5 +25,5 @@ macos-titlebar-style = transparent
 
 ##### Keybindings
 
-# line continuation
 keybind = shift+enter=text:\\\n
+keybind = shift+insert=paste_from_clipboard
