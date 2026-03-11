@@ -4,6 +4,12 @@
     "allow": [
       "mcp__ide__getDiagnostics",
 
+      "Bash(gh issue list*)",
+      "Bash(gh issue view*)",
+      "Bash(gh pr list*)",
+      "Bash(gh pr view*)",
+      "Bash(gh search*)",
+
       "Bash(git blame*)",
       "Bash(git diff*)",
       "Bash(git log*)",
